@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Mídias em HTML5</h1>
+    <h2>Imagem dinâmica:</h2>
+    <p>aumente e diminua o tamanho da janela do navegador</p>
+    
+    <!-- a tag picture com as tag img e source determinam a foto a ser mostrada a partir do tamanho de tela disponível pro site -->
+    <!-- Source:Media:Type -> escolha max width e bote a largura da maior imagem e no srcset o arquivo da imagem menor -->
+    <!-- dentro da tag srcset, o nome do arquivo não pode ter espaço -->
+    <!-- A ordem dos <Source> importa, sempre fazer uma hierarquia do maior pro menor ou vice e versa -->
+    <picture>
+        <source media="(max-width: 750px)" srcset="fotos/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="fotos/foto-m.png" type="image/png">
+        <img src="fotos/foto-g.png" alt="foto">
+    </picture>
+
+    <p><a href="index.html">Voltar para Página de mídias</a></p>
+</body>
+</html>

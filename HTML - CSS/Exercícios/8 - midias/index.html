@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Aprendendo a botar mídias no site</h1>
+    <h2>Imagem dinâmica:</h2>
+    <p><a href="pg2.html">Link para imagens dinâmicas</a></p>
+
+    <h2>Reproduzindo audio:</h2>
+    <p>Tipos de arquivos compatíveis: MP3, WAV, e OGG</p>
+    <p>usamos a tag audio, e os parâmetros são: <br>
+        <ul>
+            <li>'loop' - serve para deixar o audio em loop</li>
+            <li>preload - serve para verificar se o site só termina de carregar com o audio baixado ou não
+                <ul>
+                    <li>"auto"-site apenas carrega com o audio baixado</li>
+                    <li>"metadata" - baixa apenas informaçoes como nome e duração, não o arquivo inteiro em si</li>
+                    <li>none"- só vai baixar algo do arquivo quando ele for reproduzido</li>
+                </ul>
+            </li>
+            <li>controls - mostra os controles de tempo e pausa/play</li>
+        </ul>
+    </p>
+    <p>girl in red - Rue: <br>
+        <audio src="audio/girl-in-red-Rue.mp3" controls preload="metadata">Girl in red - Rue</audio>
+    </p>
+    <p>Labrinth - Forever: <br>
+        <audio controls preload="none">
+            <source src="audio/Labrinth-Forever.mp3" type="audio/mpeg">
+            <!--Se tu usar mais <source> aqui, ele apenas vai rodar o proximo se o anterior não conseguir rodar-->
+            <p>seu navegador não reproduz audio</p>
+        </audio>
+    </p>
+
+    <h2>Reprodução de vídeo:</h2>
+    <h3>Inserindo Vídeo hospedado localmente:</h3>
+        <p>Tipos de arquivos compatíveis: Mp4, m4v, webm e ogv <br>
+            usamos a tag video, e os parâmetros são:
+            <ul>
+                <li>'loop' - serve para deixar o audio em loop</li>
+                <li>preload - serve para verificar se o site só termina de carregar com o audio baixado ou não
+                    <ul>
+                        <li>"auto"-site apenas carrega com o audio baixado</li>
+                        <li>"metadata" - baixa apenas informaçoes como nome e duração, não o arquivo inteiro em si</li>
+                        <li>none"- só vai baixar algo do arquivo quando ele for reproduzido</li>
+                    </ul>
+                </li>
+                <li>controls - mostra os controles de tempo e pausa/play</li>
+                <li>width - controlar o tamanho do player</li>
+                <li>poster - bota uma thumb no vídeo</li>
+            </ul>
+        </p>
+        <video src="video/Video-1.m4v" controls preload="metadata" width="300"></video>
+        <br>
+        <!-- mesmo esquema de audio-->
+        <video controls width="300" preload="metadata" poster="video/thumb.jpg">
+            <source src="video/Video-1.m4v" type="video/mp4">
+            <source src="video/video.mp4" type="video/mp4">
+            <!--Se tu usar mais <source> aqui, ele apenas vai rodar o proximo se o anterior não conseguir rodar-->
+            <p>seu navegador não reproduz vídeos</p>
+        </video>
+    </p>
+
+    <h3>Insendo vídeos hospedados externamente:</h3>
+    <p>apenas usar a aba compartilhar dos sites e pa pou</p>
+    <h4>YouTube:</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VsxlqmSDmBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>

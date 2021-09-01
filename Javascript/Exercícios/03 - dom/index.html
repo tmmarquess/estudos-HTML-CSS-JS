@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(61, 90, 117);
+            color: rgb(223, 213, 213);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com o DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>aprendendo a usar o DOM em javascript</p>
+    <div class="teste">clique em mim!!!</div>
+    <script>
+        document.getElementsByTagName("p")[0].innerText += " [p]" //especifica a tag por meio da ordem de uso
+        window.document.querySelector('div.teste').innerText += " testando outra forma" //o querrySelector usa os seletores CSS
+    </script>
+</body>
+</html>

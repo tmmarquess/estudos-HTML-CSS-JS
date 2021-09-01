@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo do uso de Hover</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <style>
+        div > p{ /*se aplica somente a todo <p> que está contido em um <div>*/
+            display: none;
+        }
+
+        div:hover > p{ /* se aplica a todo <p> que está contido em um <div> quando o mouse está em cima do <div>*/
+            display: block;
+            background-color: bisque;
+            color: black;
+        }
+
+        div:hover{
+            color:rgb(110, 104, 104);
+            width: 205px;
+        }
+        div
+    </style>
+</head>
+<body>
+    <h1>Se liga no esquema</h1>
+    <p>Passe o mouse no texto abaixo :P</p>
+    <div>
+        Passe o mouse aqui :)
+        <p>
+            ÓIA O TEXTO NOVO MANO 
+        </p>
+    </div>
+    <br>
+    <div>
+        <a href="index.html">Voltar à página anterior</a>
+        <p>Infelizmente você irá embora :(</p>
+    </div>
+</body>
+</html>

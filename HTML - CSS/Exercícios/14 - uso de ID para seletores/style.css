@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/*
+    em HTML, o 'id' se equivale ao '#' em css
+    em HTML, o 'class' se equivale ao '.' em css
+
+    o id é usado em apenas uma excessão, enquanto o class é usado em um agrupamento de excessões
+*/
+
+body{
+    background-image: linear-gradient(360deg,#64858C,#a4c4d3);
+    /*background-image: linear-gradient(120deg,#e66465, #9198e5);*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* apenas a tag h1 com o parâmentro id="principal" receberá essa mudança, e o nome do id pode ser qualquer outro*/
+h1#principal{
+    text-align: center;
+
+}
+/*Inclusive as configurações que estiverem no h1 global também serão aplicadas no h1 personalizado*/
+h1{
+    color: #385359;
+}
+.basico{
+    color: #648c6b;
+}
+.intermediario{
+    color: rgb(187, 142, 30);
+}
+.avancado{
+    color: rgb(136, 21, 21);
+}
+h2{
+    text-decoration: underline;
+}
+
+.destaque{
+    background-color: rgba(99, 54, 100, 0.781);
+}

@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+@font-face { /*importa fontes externas baixadas :)*/
+    font-family: 'android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #37C777,#2D9E5F,#206F42,#1A5C38);
+    text-align: center;
+    color: white;
+    padding: 5px;
+    box-shadow: 1px 2px 5px #113a23ab;
+}
+
+nav{
+    text-align: left;    
+}
+
+nav > a {
+    padding: 0px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+div#header{
+    margin: 25px;
+    text-shadow: 3px 2px 3px rgba(202, 198, 198, 0.555);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: #83E1AD;
+}
+
+
+h1#titulo{
+    margin: 25px;
+}
+
+main{
+    margin: 0px auto 10px auto;
+    width: 750px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 3px 3px 5px #5fa57f93;
+}
+
+p{
+    text-align: justify;
+    text-indent: 20px;
+    margin: 10px 5px;
+}
+
+article{
+    padding: 2px 20px;
+}
+
+footer{
+    background-color: #1A5C38;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 3px;
+}
+
+article >h1{
+    font-family: android,Arial, Helvetica, sans-serif;
+    color: #1A5C38;
+    font-size: 1.8em;
+
+}
+
+article > h2{
+    background-image: linear-gradient(to right, #83e1ad67,white);
+    font-family: android,Arial, Helvetica, sans-serif;
+    color: #1A5C38;
+    padding: 0px 5px;
+    
+}
+
+div#video{
+    background-color: #1A5C38;
+    /*margin: 0px;*/
+    padding: 25px;
+    text-align: center;
+}
+
+div#imagem{
+    text-align: center;
+}
+
+a.link::after{ /*Escreve algo sempre após o conteúdo da tag*/ 
+    content: '🔗';
+}
+
+div#extra{
+    background-color: #C5EBD6;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #9cb9a99f;
+}
+
+h3{
+    background-color: #31A967;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 5px ;
+    color: white;
+    font-weight: bolder;
+    font-size: 0.8em;
+}
+
+div#extra > p{
+    margin: 10px 10px;
+}
+td{
+    width: 350px;
+}
+
+.destacado{
+    color: #1A5C38;
+    font-weight: bold;
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+a{
+    text-decoration: none;
+    color: #1A5C38;
+    font-weight: bold;
+}
+
+p#fim{
+    margin: 10px 20px;
+}
+
+.und{
+    text-decoration: underline;
+}
+
+li:before { 
+    content:"\2714\0020";
+}
+
+ul { 
+    list-style-type: none; 
+}

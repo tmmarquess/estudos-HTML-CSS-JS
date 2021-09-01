@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: justify;
+            /* font-size - 
+            Medidas absolutas:
+            cm, mm, in(polegada), px(pixel), pt, pc
+
+            Medidas Relativas:
+            em, ex, rem, vw, vh, %
+            16px = 1em // tamanho natural da letra
+            preferência pelo uso de EM ou px. mas usa EM
+             */
+            font-size: 1em;
+            /*
+            font-weight: (lighter, normal, bold, bolder); - peso da fonte
+            font-style: italic; - como botar em itálico
+            text-decoration: underline; - como sublinhar o texto
+
+            shorthand(atalho para fazer todos de uma vez)
+            font: font-style -> font-weight -> font-size -> font-family
+            ex: font: italic bolder 3em sans-serif 
+            */
+            
+            
+        }
+        h2, h3{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus cumque deleniti, ut deserunt libero sequi autem veniam in, dolor quaerat earum officiis dolorem blanditiis laudantium sunt commodi modi ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum in alias consectetur dolorum, possimus provident quaerat neque odio sequi libero consequatur expedita mollitia dicta voluptatum. Eius architecto numquam perspiciatis fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ratione doloremque ad veritatis excepturi, eaque mollitia pariatur eum error tempora debitis voluptatibus, atque expedita iure commodi unde? Numquam, deleniti itaque?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor natus placeat quibusdam impedit soluta nam sequi esse ut repellat cumque, amet dignissimos eveniet earum similique dolore necessitatibus! Labore, neque placeat.</p>
+    <h2>Subtitulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, in cumque dolores quae sunt similique quos libero! Veritatis est, modi ducimus corrupti, nobis fugiat commodi sequi provident, voluptas explicabo mollitia?</p>
+    <p>Caso o dispositivo não tenha a fonte desejada, o parâmentro font-family irá para a próxima que lhe foi posta, as safe fonts são fontes que de certeza todo dispositivo terá pelo menos 1 delas, e para saber quais são, <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">acesse o link</a></p>
+    <h2>Características de uma fonte</h2>
+    <h3>Tamanho</h3>
+    <p><img src="tamanho das letras.png" alt="" width="700px"></p>
+    <h3>categorias  </h3>
+    <p><img src="categorias de fontes.png" alt="" width="700px"></p>
+</body>
+</html>

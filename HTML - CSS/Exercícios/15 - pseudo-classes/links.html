@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <style>
+
+        /* Seletores Personalizados:
+            #  = id
+            .  = class
+            :  = pseudo Class
+            :: = pseudo element
+            >  = Children 
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited{ /*alterações são feitas apenas em links ja visitados*/
+            color:blue
+        }
+
+        a:hover{
+            color:black;
+            text-decoration: underline;
+        }
+
+        a:active{ /*faz as alterações quando o conteúdo da tag for clicado*/
+            color: yellow;
+        }
+
+        a::after{ /*Escreve algo sempre após o conteúdo da tag*/ 
+            content: '(Link externo)';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(52, 48, 102);
+        }
+        .especial::before{
+            content: '-> ';
+        }
+        .especial::after{
+            content: ' <-   '
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+        <li><a href="https://tecmundo.com.br" target="_blank" class="especial">TecMundo</a></li>
+        <li><a href="https://techtudo.com.br" target="_blank">TechTudo</a></li>
+    </ul>
+
+    <h2>Border e Padding</h2>
+    <img src="caixa.png" alt="" width="700px">
+    <p>O argumento 'padding' dentro da style da tag em questão aumenta o tamanho entre a borda e o conteúdo</p>
+    <img src="margin.png" alt="" width="700px">
+    <p>A margin é o contrário do padding, sendo a mesma utilizada para o espaçamento externo, e não o interno</p>
+    <img src="outline.png" alt="" width="700px">
+    <p>O outline se dá pelo contorno externo ao redor da borda, estando o mesmo contido na margin</p>
+    <img src="box e inline.png" alt="" width="700px">
+    <p>Box level e Inline Level e seus respectivos exemplos</p>
+    <img src="mais exemplos.png" alt="">
+    <p>Mais exemplos de Box level e inline level</p>
+</body>
+</html>
