@@ -1,4 +1,4 @@
-function carregar(){
+const interval = setInterval(() =>{
     var msg = document.getElementById("msg")
     var img = document.getElementById("imagem")
     var data = new Date()
@@ -31,4 +31,4 @@ function carregar(){
     }else{
         msg.innerHTML += " minuto"
     }
-}
+},1000) //essa função cinst interval = setInterval(() =>{*função*},1000) refaz essa função a cada 1 segundo (= 1000ms)

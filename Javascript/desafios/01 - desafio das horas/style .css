@@ -1,16 +1,10 @@
 @charset "UTF-8";
 
 body{
-    background-color: rgb(70, 142, 236);
     font: normal 15pt Arial;
     color: white;
     text-align: center;
-    /*background-image: linear-gradient(to right,#353B41,#6D5F53,#7D624F);*/
 }
-
-/*header{
-
-}*/
 
 section{
     background: white;
