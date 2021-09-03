@@ -31,4 +31,4 @@ const interval = setInterval(() =>{
     }else{
         msg.innerHTML += " minuto"
     }
-},1000) //essa função cinst interval = setInterval(() =>{*função*},1000) refaz essa função a cada 1 segundo (= 1000ms)
+},1000) //essa função const interval = setInterval(() =>{*função*},1000) refaz essa função a cada 1 segundo (= 1000ms)
