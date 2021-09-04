@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--link do bootstrap-->
+    <style>
+        .destaque {
+            border: solid 1px black;
+            background-color: yellow;
+            text-align: center;
+        }
+    </style>
+    <title>teste Bootstrap</title>
+</head>
+
+<body>
+    <p class="container destaque">exemplo de container bootstrap</p>
+    <p class="fluid-container destaque"> exemplo de container flúido Bootstrap</p>
+    <div class="container destaque">
+        <div class="row">
+            <div class="col destaque">
+                parte 1
+            </div>
+            <div class="col destaque">
+                parte 2
+            </div>
+            <div class="col destaque">
+                parte 3
+            </div>
+            <div class="col destaque">
+                parte 4
+            </div>
+            <div class="col destaque">
+                parte 5
+            </div>
+        </div>
+    </div>
+    <!--
+        um container é uma tabela com 12 colunas e infinitas linhas, a class row transforma a div em uma linha dessa tabela e a class col distribui as tags filhas pela tabela
+    -->
+    <div class="container destaque">
+        <div class="row">
+            <div class="col destaque">
+                parte 1
+            </div>
+            <div class="col-6 destaque"> <!-- a class col-x (x entre 1 e 12) determina a quantidade de colunas que a tag vai ocupar, sendo o resto automaticamente distribuído entre o que sobrou-->
+                essa div ocupa metade da tela
+            </div>
+            <div class="col destaque">
+                parte 3
+            </div>
+        </div>
+    </div>
+
+    <!--
+        breakpoints:
+
+        Extra-small devices - xs - < 544 px
+
+        Small devices - sm - >= 544 px  
+
+        Medium devices - md - >= 768 px
+
+        Large devices - lg - >= 992 px
+
+        Extra-large devices - xl - >= 1200 px
+
+    -->
+    <div class="container destaque">
+        <div class="row">
+            <div class="col-md col-sm-12 destaque">
+                parte 1
+            </div>
+            <div class="col-md-6 col-sm-12 destaque"> <!--em telas menores essa div vai ocupar toda a linha, enquanto em maiores, ocupa apenas a metade-->
+                parte 2
+            </div>
+            <div class="col-md col-sm-12 destaque">
+                parte 3
+            </div>
+        </div>
+    </div>
+
+    <div class="container destaque">
+        <div class="row">
+            <div class="col-md col-sm col-12 destaque">
+                parte 1
+            </div>
+            <div class="col-md-6 col-sm-4 col-12 destaque"> <!-- não é necessário especificar que é para um device menor no final    --->
+                parte 2
+            </div>
+            <div class="col-md col-sm col-12 destaque">
+                parte 3
+            </div>
+        </div>
+    </div>
+
+    <div class="container destaque">
+        <div class="row">
+            <div class="col-md col-sm col-12 destaque">
+                parte 1
+            </div>
+            <div class="col-md-6 col-sm-4 col-auto destaque"> <!-- adapta o tamanho da coluna de acordo com o conteúdo inserido nela    --->
+                parte 2
+            </div>
+            <div class="col-md col-sm col-12 destaque">
+                parte 3
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
