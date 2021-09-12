@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-App<treinaweb-maven>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "br.com.treinaweb.App",
+            "projectName": "treinaweb-maven",
+            "args": ""
+        }
+    ]
+}
