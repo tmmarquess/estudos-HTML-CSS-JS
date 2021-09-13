@@ -1,6 +1,6 @@
 package br.com.treinaweb.springbootteste.model;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,6 +8,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.DateTimeFormat.ISO;
 
 @Entity
 @Table
@@ -21,7 +24,8 @@ public class Cliente{
     private String nome;
 
     @Column(nullable = false,name = "data_nascimento")
-    private Date dataNasc;
+    @DateTimeFormat(iso = ISO.DATE)
+    private LocalDate dataNasc;
 
     @Column(nullable = false)
     private String profissao;
@@ -42,11 +46,11 @@ public class Cliente{
         this.nome = nome;
     }
 
-    public Date getDataNasc() {
+    public LocalDate getDataNasc() {
         return dataNasc;
     }
 
-    public void setDataNasc(Date dataNasc) {
+    public void setDataNasc(LocalDate dataNasc) {
         this.dataNasc = dataNasc;
     }
 
@@ -58,7 +62,7 @@ public class Cliente{
         this.profissao = profissao;
     }
 
-    public Cliente(long id, String nome, Date dataNasc, String profissao) {
+    public Cliente(long id, String nome, LocalDate dataNasc, String profissao) {
         this.id = id;
         this.nome = nome;
         this.dataNasc = dataNasc;
