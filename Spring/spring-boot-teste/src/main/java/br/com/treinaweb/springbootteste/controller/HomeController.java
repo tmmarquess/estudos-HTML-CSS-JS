@@ -30,7 +30,7 @@ public class HomeController {
     @GetMapping("/textoAlt") //textoAlternativo porém vai ser o padrão
     public ModelAndView textoAlt(){
         ModelAndView modelo = new ModelAndView();
-        modelo.setViewName("textoAlt");
+        modelo.setViewName("textoAlt"); 
         modelo.addObject("textoExemplo","Bem vindo ao Spring! :) (texto feito de outra forma)");
         return modelo;
     }
